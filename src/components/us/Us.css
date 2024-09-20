@@ -1,0 +1,70 @@
+.agriculture-container {
+    display: flex;
+    background-color: #294535;
+    padding: 50px;
+    color: white;
+    height: 80vh;
+    justify-content: space-between;
+  }
+  
+  .left-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  
+  .contact-button {
+    background-color: white;
+    color: #294535;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #ddd;
+  }
+  
+  .leaf-image {
+    width: 100px; /* Adjust this size based on the original image */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    margin-top: 20px;
+  }
+  
+  .feature {
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
