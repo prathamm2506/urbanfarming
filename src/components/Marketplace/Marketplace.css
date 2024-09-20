@@ -12,6 +12,7 @@ body {
     padding: 20px;
 }
 
+/* Grid layout for products */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -26,16 +27,16 @@ body {
     transition: box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     gap: 2rem;
-    height: 500px; 
+    height: 500px;
     font-size: 15px;
-    
 }
 
 .product-card:hover {
     box-shadow: 0 4px 20px #2F402E;
 }
+
 .product-card:visited {
     box-shadow: 0 4px 20px #64CC04;
 }
@@ -45,9 +46,10 @@ body {
     border-radius: 8px;
 }
 
+/* Button styling */
 .btn {
     background-color: #DFF2CE;
-    color: black; /* Adjusted for better contrast */
+    color: black;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -57,9 +59,57 @@ body {
 
 .btn:hover {
     background-color: #2F402E;
-    color: white; /* Ensure text is visible on hover */
+    color: white;
 }
- .img{
-    max-width: 50px;
+
+/* Image sizing inside product cards */
+.img {
+    max-width: 100px;
     max-height: 250px;
- }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .product-card {
+        height: auto;
+        padding: 10px;
+        gap: 1.5rem;
+        font-size: 14px;
+    }
+
+    .img {
+        max-width: 80px;
+        max-height: 200px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        height: auto;
+        padding: 10px;
+        gap: 1rem;
+        font-size: 13px;
+    }
+
+    .img {
+        max-width: 70px;
+        max-height: 180px;
+    }
+
+    .btn {
+        padding: 7px 10px;
+    }
+}

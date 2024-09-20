@@ -30,17 +30,7 @@ const Courses = () => {
 
   return (
     <div>
-    <div className="card-container">
-      {courses.map((course, index) => (
-        <CourseCard
-          key={index}
-          title={course.title}
-          description={course.description}
-          image={course.image}
-        />
-      ))}
-        </div>
-      <div className="filter-container">
+      <div className="filter-container mb-5">
         <label htmlFor="category">Filter by Category: </label>
         <select
           id="category"
@@ -53,6 +43,17 @@ const Courses = () => {
           <option value="Hydroponics">Hydroponics</option>
         </select>
       </div>
+    <div className="card-container">
+      {courses.map((course, index) => (
+        <CourseCard
+          key={index}
+          title={course.title}
+          description={course.description}
+          image={course.image}
+        />
+      ))}
+        </div>
+      
     </div>
   );
 }

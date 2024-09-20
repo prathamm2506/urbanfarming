@@ -4,10 +4,45 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
+:root {
+    /* Colors */
+    --dark-grey: #474747ee;
+    --light-grey: #bababa;
+    --black: #252525;
+    --white: #FFFFFF;
+    --yellow: #ffffff;
+    --yellow-hover: #ffee00;
+  
+    /* Font declaration */
+    --lato: "Lato", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --calibri: "Calibri", sans-serif;
+  
+    /* Font Sizes */
+    --mega: clamp(2.2rem, 8vw, 3.6rem);
+    --heading: clamp(2rem, 6vw, 3.2rem);
+    --medium: clamp(1.5rem, 4vw, 2.2rem);
+    --para: clamp(1rem, 3vw, 1.25rem);
+    --small: clamp(0.8rem, 2vw, 1.15rem);
+  }
+  
+  * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", system-ui;
-}
-
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: var(--poppins);
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  /* most important - snap scrolling */
+    /* scroll-snap-type: y mandatory;
+    timeline-scope: --section, --div, --main; */
+  }

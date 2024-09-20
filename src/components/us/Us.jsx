@@ -1,6 +1,6 @@
 import React from 'react';
 import './Us.css'; // Create this CSS file for styles
-import img1 from '../../assets/leaf.jpg'
+import img1 from '../../assets/leaf.png'
 
 const AgricultureComponent = () => {
   return (

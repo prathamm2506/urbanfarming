@@ -38,7 +38,7 @@ const Marketplace = () => {
           </div>
           <div className="product-card">
             <img  class="img" src={img4} alt="Chilli" />
-            <h2>Green Chilli Seeds</h2>
+            <h2>Green Chilli</h2>
             <p>₹50</p>
             <button className="btn">
               <i className="fas fa-shopping-cart"></i> Buy Now
@@ -46,7 +46,7 @@ const Marketplace = () => {
           </div>
           <div className="product-card">
             <img class="img" src={img5} alt="chrysanthemum" />
-            <h2>Chrysanthemum Seeds</h2>
+            <h2>Chrysanthemum</h2>
             <p>₹50</p>
             <button className="btn">
               <i className="fas fa-shopping-cart"></i> Buy Now
@@ -54,7 +54,7 @@ const Marketplace = () => {
           </div>
           <div className="product-card">
             <img  class="img" src={img6} alt="Coriander" />
-            <h2>Coriander Seeds</h2>
+            <h2>Coriander</h2>
             <p>₹50</p>
             <button className="btn">
               <i className="fas fa-shopping-cart"></i> Buy Now
@@ -62,7 +62,7 @@ const Marketplace = () => {
           </div>
           <div className="product-card">
             <img  class="img" src={img7} alt="Cucumber" />
-            <h2>Cucumber Seeds</h2>
+            <h2>Cucumber</h2>
             <p>₹50</p>
             <button className="btn">
               <i className="fas fa-shopping-cart"></i> Buy Now

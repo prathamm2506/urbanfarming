@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-// import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.png";
 // import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className={`main-navdiv ${isOpen ? "open" : ""}`}>
       {/* <Link to="/" onClick={closeNavbar}> */}
-        {/* <img src={Logo} alt="" className="logo" /> */}
+        <img src={Logo} alt="" className="logo" />
       {/* </Link> */}
       <input
         type="checkbox"
@@ -31,23 +31,14 @@ const Navbar = () => {
         <a data-text="home" onClick={closeNavbar}>
           Home
         </a>
-        <a data-text="se03" onClick={closeNavbar}>
-          se03
+        <a data-text="Community" onClick={closeNavbar}>
+          Community
         </a>
-        <a data-text="se03 max" onClick={closeNavbar}>
-         se03 max
+        <a data-text="Marketplace" onClick={closeNavbar}>
+         Marketplace
         </a>
-        <a data-text="se03 lite" onClick={closeNavbar}>
-          se03 lite
-        </a>
-        <a data-text="compare" onClick={closeNavbar}>
-          compare
-        </a>
-        <a data-text="about" onClick={closeNavbar}>
-         about
-        </a>
-        <a data-text="contact" onClick={closeNavbar}>
-          contact
+        <a data-text="Education" onClick={closeNavbar}>
+          Education
         </a>
         <div className="background-image"></div>
         <div className="social">

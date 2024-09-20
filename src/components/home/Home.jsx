@@ -4,10 +4,6 @@ import './Home.css'
 const Home = () => {
   return (
     <div className="farming-container">
-      <header className="farming-header">
-        <div className="logo"></div>
-        <div className="menu-icon"></div>
-      </header>
       <div className="farming-content">
         <div className="text-section">
           <h1>Intelligent Farming</h1>
