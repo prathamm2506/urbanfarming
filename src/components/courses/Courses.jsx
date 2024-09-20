@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './courses.css';
 import CourseCard from './CourseCard';
 import img1 from '../../assets/img1.jpeg'
@@ -23,6 +23,10 @@ const Courses = () => {
       image: img3,
     },
   ];
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const filteredCourses = selectedCategory === "All"
+  ? courses
+  : courses.filter(course => course.category === selectedCategory);
 
   return (
     <div className="card-container">
@@ -34,7 +38,21 @@ const Courses = () => {
           image={course.image}
         />
       ))}
+      <div className="filter-container">
+        <label htmlFor="category">Filter by Category: </label>
+        <select
+          id="category"
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+        >
+          <option value="All">All</option>
+          <option value="General">General</option>
+          <option value="Vertical Farming">Vertical Farming</option>
+          <option value="Hydroponics">Hydroponics</option>
+        </select>
+      </div>
     </div>
+    
   );
 }
 
