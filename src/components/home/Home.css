@@ -1,0 +1,144 @@
+.farming-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #adea9a, #6cd9d2);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../assets/home.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .farming-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  .menu-icon {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin-top: 10px;
+  }
+  
+  .farming-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .text-section {
+    width: 80%;
+  }
+  
+  .text-section h1 {
+    font-size: 3rem;
+    color: #2e592e;
+    margin: 0;
+  }
+  
+  .text-section p {
+    font-size: 1.2rem;
+    color: #2e592e;
+    margin-top: 20px;
+    max-width: 400px;
+    /* margin: 0 auto; */
+  }
+  
+  .image-section {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .drone {
+    width: 80px;
+    height: 80px;
+    background-image: url('/path-to-drone-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+  }
+  
+  .farm {
+    width: 400px;
+    height: 400px;
+    background-image: url('/path-to-farm-image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  
+  /* Responsiveness for tablets */
+  @media (min-width: 768px) {
+    .farming-content {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .text-section {
+      width: 50%;
+    }
+  
+    .image-section {
+      width: 50%;
+    }
+  
+    .text-section h1 {
+      font-size: 4rem;
+    }
+  
+    .drone {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .farm {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  
+  /* Responsiveness for mobile */
+  @media (max-width: 767px) {
+    .text-section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .text-section p {
+      font-size: 1rem;
+    }
+  
+    .drone {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .farm {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  

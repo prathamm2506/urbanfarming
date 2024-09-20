@@ -57,4 +57,19 @@
   .card-button:hover {
     background-color: #218838;
   }
+  .filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
   
+  .filter-container label {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  .filter-container select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }  
