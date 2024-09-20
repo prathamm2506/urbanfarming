@@ -29,6 +29,7 @@ const Courses = () => {
   : courses.filter(course => course.category === selectedCategory);
 
   return (
+    <div>
     <div className="card-container">
       {courses.map((course, index) => (
         <CourseCard
@@ -38,6 +39,7 @@ const Courses = () => {
           image={course.image}
         />
       ))}
+        </div>
       <div className="filter-container">
         <label htmlFor="category">Filter by Category: </label>
         <select
@@ -52,7 +54,6 @@ const Courses = () => {
         </select>
       </div>
     </div>
-    
   );
 }
 
