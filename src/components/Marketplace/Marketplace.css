@@ -1,21 +1,14 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .main-content {
-    padding: 20px;
+    padding: 2rem;
 }
 
 /* Grid layout for products */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -30,6 +23,7 @@ body {
     justify-content: flex-start;
     gap: 2rem;
     height: 500px;
+    width: 300px;
     font-size: 15px;
 }
 

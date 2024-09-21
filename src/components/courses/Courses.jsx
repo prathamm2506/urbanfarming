@@ -22,6 +22,11 @@ const Courses = () => {
       description: "Start growing plants without soil using hydroponics.",
       image: img3,
     },
+    {
+      title: "Introduction to Indoor Farming",
+      description: "Start growing plants without soil using hydroponics.",
+      image: img2,
+    },
   ];
   const [selectedCategory, setSelectedCategory] = useState("All");
   const filteredCourses = selectedCategory === "All"
@@ -29,7 +34,8 @@ const Courses = () => {
   : courses.filter(course => course.category === selectedCategory);
 
   return (
-    <div>
+    <div id='courses'>
+      <h1 className='mainh1'>Featured Courses</h1>
       <div className="filter-container mb-5">
         <label htmlFor="category">Filter by Category: </label>
         <select

@@ -15,9 +15,9 @@ import img12 from '../../assets/tray.webp';
 
 const Marketplace = () => {
   return (
-    <div>
+    <div id='marketplace'>
+        <h1 className='mainh1'>Featured Products</h1>
       <main className="main-content">
-        <h1>Featured Products</h1>
         <div className="product-grid">
           <div className="product-card">
             <img class="img" src={img1} alt="Basil" />

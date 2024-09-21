@@ -28,17 +28,20 @@ const Navbar = () => {
         onChange={handleToggle}
       />
       <nav className="navbar">
-        <a data-text="home" onClick={closeNavbar}>
+        <a data-text="home" onClick={closeNavbar} href="#home">
           Home
         </a>
-        <a data-text="Community" onClick={closeNavbar}>
-          Community
+        <a data-text="About" onClick={closeNavbar} href="#us">
+          About
         </a>
-        <a data-text="Marketplace" onClick={closeNavbar}>
+        <a data-text="Education" onClick={closeNavbar} href="#course">
+          Education
+        </a>
+        <a data-text="Marketplace" onClick={closeNavbar} href="#marketplace">
          Marketplace
         </a>
-        <a data-text="Education" onClick={closeNavbar}>
-          Education
+        <a data-text="Community" onClick={closeNavbar} href="#chat">
+          Community
         </a>
         <div className="background-image"></div>
         <div className="social">

@@ -46,3 +46,9 @@
     /* scroll-snap-type: y mandatory;
     timeline-scope: --section, --div, --main; */
   }
+
+  .mainh1{
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
