@@ -6,7 +6,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-image: url('../../assets/home.jpg');
+    background-image: url('../../assets/Urban-Farming-Business-UWA.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -19,20 +19,7 @@
     position: absolute;
     top: 0;
   }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    border-radius: 50%;
-  }
-  
-  .menu-icon {
-    width: 40px;
-    height: 5px;
-    background-color: black;
-    margin-top: 10px;
-  }
+
   
   .farming-content {
     display: flex;
@@ -51,13 +38,13 @@
   
   .text-section h1 {
     font-size: 3rem;
-    color: #2e592e;
+    color: white;
     margin: 0;
   }
   
   .text-section p {
     font-size: 1.2rem;
-    color: #2e592e;
+    color: white;
     margin-top: 20px;
     max-width: 400px;
     /* margin: 0 auto; */

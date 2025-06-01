@@ -22,6 +22,11 @@ const Courses = () => {
       description: "Start growing plants without soil using hydroponics.",
       image: img3,
     },
+    {
+      title: "Introduction to Indoor Farming",
+      description: "Start growing plants without soil using hydroponics.",
+      image: img2,
+    },
   ];
   const [selectedCategory, setSelectedCategory] = useState("All");
   const filteredCourses = selectedCategory === "All"
@@ -29,18 +34,9 @@ const Courses = () => {
   : courses.filter(course => course.category === selectedCategory);
 
   return (
-    <div>
-    <div className="card-container">
-      {courses.map((course, index) => (
-        <CourseCard
-          key={index}
-          title={course.title}
-          description={course.description}
-          image={course.image}
-        />
-      ))}
-        </div>
-      <div className="filter-container">
+    <div id='courses'>
+      <h1 className='mainh1'>Featured Courses</h1>
+      <div className="filter-container mb-5">
         <label htmlFor="category">Filter by Category: </label>
         <select
           id="category"
@@ -53,6 +49,17 @@ const Courses = () => {
           <option value="Hydroponics">Hydroponics</option>
         </select>
       </div>
+    <div className="card-container">
+      {courses.map((course, index) => (
+        <CourseCard
+          key={index}
+          title={course.title}
+          description={course.description}
+          image={course.image}
+        />
+      ))}
+        </div>
+      
     </div>
   );
 }

@@ -3,14 +3,10 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className="farming-container">
-      <header className="farming-header">
-        <div className="logo"></div>
-        <div className="menu-icon"></div>
-      </header>
+    <div className="farming-container" id='home'>
       <div className="farming-content">
         <div className="text-section">
-          <h1>Intelligent Farming</h1>
+          <h1>Intelligent Farming with Square Roots</h1>
           <p>
             Our solutions empower agricultural operators, reduce operation costs, improve crop quality, and increase yield rate.
           </p>

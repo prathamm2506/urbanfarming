@@ -5,10 +5,12 @@
     justify-content: center; /* Align items in the center horizontally */
     flex-wrap: wrap; /* Allow wrapping if cards exceed available width */
     margin-top: 50px;
+    padding-bottom: 10rem;
   }
   
   .card {
-    width: 300px;
+    width: 350px;
+    height: 480px;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -24,22 +26,23 @@
   
   .card-image {
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
   }
   
   .card-content {
-    padding: 15px;
+    padding: 15px 25px;
     background-color: #fff;
   }
   
   .card-content h3 {
-    margin: 0;
+    margin-bottom: 10px;
     font-size: 1.5em;
   }
   
   .card-content p {
     font-size: 0.9em;
+    margin-bottom: 20px;
     color: #555;
   }
   
@@ -60,6 +63,7 @@
   .filter-container {
     margin-bottom: 20px;
     text-align: center;
+    margin-top: 5rem;
   }
   
   .filter-container label {

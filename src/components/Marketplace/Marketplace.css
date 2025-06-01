@@ -1,47 +1,14 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 20px;
-}
-
-.logo {
-    font-size: 24px;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
 .main-content {
-    padding: 20px;
+    padding: 2rem;
 }
 
+/* Grid layout for products */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -51,10 +18,21 @@ body {
     padding: 15px;
     text-align: center;
     transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    height: 500px;
+    width: 300px;
+    font-size: 15px;
 }
 
 .product-card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px #2F402E;
+}
+
+.product-card:visited {
+    box-shadow: 0 4px 20px #64CC04;
 }
 
 .product-card img {
@@ -62,9 +40,10 @@ body {
     border-radius: 8px;
 }
 
+/* Button styling */
 .btn {
-    background-color: #3498db;
-    color: white;
+    background-color: #DFF2CE;
+    color: black;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -73,27 +52,58 @@ body {
 }
 
 .btn:hover {
-    background-color: #2980b9;
-}
-
-.footer {
-    background-color: #333;
+    background-color: #2F402E;
     color: white;
-    text-align: center;
-    padding: 15px 0;
 }
 
-.footer-links {
-    list-style: none;
-    padding: 0;
+/* Image sizing inside product cards */
+.img {
+    max-width: 100px;
+    max-height: 250px;
 }
 
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
+/* Responsive design */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .product-card {
+        height: auto;
+        padding: 10px;
+        gap: 1.5rem;
+        font-size: 14px;
+    }
+
+    .img {
+        max-width: 80px;
+        max-height: 200px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+    }
 }
 
-.footer-links a {
-    color: white;
-    text-decoration: none;
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        height: auto;
+        padding: 10px;
+        gap: 1rem;
+        font-size: 13px;
+    }
+
+    .img {
+        max-width: 70px;
+        max-height: 180px;
+    }
+
+    .btn {
+        padding: 7px 10px;
+    }
 }

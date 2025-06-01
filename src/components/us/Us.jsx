@@ -1,10 +1,10 @@
 import React from 'react';
 import './Us.css'; // Create this CSS file for styles
-import img1 from '../../assets/leaf.jpg'
+import img1 from '../../assets/leaf.png'
 
 const AgricultureComponent = () => {
   return (
-    <div className="agriculture-container">
+    <div className="agriculture-container" id='us'>
       <div className="left-section">
         <h1 className="title">
           Leverage the most flexible platform in indoor agriculture.
